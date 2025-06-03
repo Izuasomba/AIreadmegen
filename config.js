@@ -7,7 +7,7 @@ module.exports = {
 
     // OpenAI configuration
     openai: {
-        model: 'gpt-4',
+        model: 'gpt-4o-mini',
         temperature: 0.7,
         maxTokens: 1500
     },
