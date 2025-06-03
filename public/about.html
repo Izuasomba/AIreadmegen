@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AI Readme Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <!-- Navigation Header -->
+    <nav class="glass-effect sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">AI README</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors duration-200">Home</a>
+                    <a href="about.html" class="text-blue-600 font-medium">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors duration-200">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-blue-600 font-medium">About</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            <h1 class="text-4xl font-bold gradient-text mb-8">About AI Readme Generator</h1>
+            
+            <div class="space-y-8">
+                <section>
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        AI Readme Generator is dedicated to simplifying the documentation process for developers worldwide. 
+                        We believe that clear, comprehensive documentation is crucial for project success and community engagement.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">What We Offer</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-medium text-gray-800 mb-3">Smart Documentation</h3>
+                            <p class="text-gray-600">
+                                Our AI-powered system generates professional README files tailored to your project's specific needs.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-medium text-gray-800 mb-3">Customization</h3>
+                            <p class="text-gray-600">
+                                Easily customize your documentation with our intuitive interface and extensive template options.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Why Choose Us</h2>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Time-saving automation for documentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Professional and consistent formatting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Regular updates and improvements</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
